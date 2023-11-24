@@ -1,0 +1,431 @@
+/* Resetting default margin and padding for cleaner styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Logo styles */
+.logo a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Hamburger menu styles for mobile */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 2px;
+    width: 25px;
+    background-color: white;
+    margin-bottom: 4px;
+}
+
+/* Navbar links styles */
+.navbar-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-links ul li {
+    margin-right: 20px;
+}
+
+.navbar-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Search bar styles */
+.search-container {
+    display: flex;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.search-container button {
+    padding: 8px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+/* Media query for mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        margin-top: 20px;
+        margin-right: 0;
+    }
+
+    .search-container {
+        margin-top: 20px;
+        display: none;
+    }
+}
+
+
+/* Landing section styles */
+.landing {
+    height: 100vh;
+    background-image: url('./OIP.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* Landing content styles */
+.landing-content {
+    max-width: 600px;
+}
+
+.landing-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.landing-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* CTA button styles */
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: white;
+    background-color: #ff4500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #e63700;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+    
+}
+
+.feature i {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ff4500;
+    /* Change the icon color as needed */
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Testimonials section styles */
+.testimonials {
+    color: #ccc;
+    background: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.testimonial {
+   /* text-align: center;*/
+    width: 30%;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    color: #555;
+}
+/* slider css*/
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    animation: slideAnimation 5s infinite;
+    /* Change slide every 5 seconds */
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/*end slider*/
+.faq-section {
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.question {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+}
+
+/* Show answer when question is clicked */
+.question.active+.answer {
+    display: block;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-info {
+    text-align: left;
+}
+
+.footer-social a {
+    color: #fff;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 20px;
+    justify-content: end;
+    
+}
+.footer-social{
+    background-color: #333;
+    color: #fff;
+}
+
+.iconDiv{
+    font-size: 3rem;
+        margin-bottom: 20px;
+        color: #ff4500;
+
+}
+
+.About-btn{
+    margin-top: 6em;
+    display: inline-block;
+        padding: 12px 57px;
+        text-decoration: none;
+        color: white;
+        background-color: #ff4500;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+}
+
+.card{
+    
+    display: flex;
+    justify-content: center;
+}
+.sliderImg{
+    text-align: justify;
+    height: 70px;
+    width: 70px;
+    
+}
+
+.cards{
+   /* width: 300px;*/
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        padding: 10px;
+}
+
+.QUESTIONSLINE{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 48%;
+    background-color: #ff4500;
+    height: 3px;
+    width: 80px;
+}
+
+.TESTIMONIALS{
+    margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 48%;
+        background-color: #ff4500;
+        height: 3px;
+        width: 70px;
+}
+
+@media screen and (max-width: 768px) {
+    .landing {
+            height: 100vh;
+           /* display: block;*/
+            background-position: center;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+    .landing-content {
+        max-width: 600px;
+    }
+        .landing-content h1 {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+    
+        .landing-content p {
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+                .testimonials {
+                    color: #ccc;
+                    background: #333;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 50px 0;
+        
+                }
+           .slides {
+            flex-direction: column;
+            animation: none;
+               
+           }
+                .footer-content {
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .About-btn {
+                    margin-top: 2em;
+                    display: inline-block;
+                    padding: 1px 57px;
+                    text-decoration: none;
+                    
+                    
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease-in-out;
+                }
+        
+        .testimonial {
+            margin-top: 21px;
+            /* text-align: center; */
+            width: 30%;
+        }
+        .TESTIMONIALS{
+            margin-left: 40%;
+        }
+        .QUESTIONSLINE{
+            margin-left: 39%;
+        }
+        .faq-section{
+            padding: 4px;
+        }
+                .footer-info {
+                    margin-right: 162px;
+                    
+                    margin-top: 29px;
+                }
+
+        .Domains{
+            margin-right: 126px;
+               
+                margin-top: 29px;
+        }
+        .Join{
+        margin-top: 22px;
+        }
+                
+}
